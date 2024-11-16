@@ -1,0 +1,172 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c4e4ff; 
+    color: #333; 
+}
+
+h1 {
+    margin-bottom: 0.5px;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.Search-bar {
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h2 {
+    margin: 1px 0 10px;
+    color: #093c66;
+    font-size: 1rem;
+}
+
+input[type="text"].generate-QR {
+    width: 100%;
+    padding: 8px;
+    margin: 0 auto 12px;
+    border: 1px solid #7fc2f3;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: block;
+    box-sizing: border-box;
+}
+
+
+button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #387fca;
+    transform: scale(1.009);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+#imgbox {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 180px; 
+    height: 180px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .Search-bar {
+        width: 100%;
+        padding: 20px;
+    }
+
+    input[type="text"].generate-QR {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    #imgbox {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    .Search-bar {
+        width: 80%;
+        max-width: 360px;
+    }
+
+    input[type="text"].generate-QR {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    #imgbox {
+        width: 180px; 
+        height: 180px;
+    }
+}
+
+@media (min-width: 800px) {
+    .Search-bar {
+        width: 60%;
+        max-width: 400px; 
+    }
+
+    input[type="text"].generate-QR {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    #imgbox {
+        width: 200px;
+        height: 200px;
+    }
+}
